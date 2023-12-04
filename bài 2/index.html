@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bộ Y tế - Cổng thông tin của Bộ Y tế về đại dịch COVID-19</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="Roboto/">
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- linkweb:https://covid19.gov.vn/?gidzl=S5Po1EuAE3jmI7GBwXKvEt5EV0Nr4JaqQ1ntKAP4Q6ywJ74EeX1lR6uT9rcdI6WuQ1Oa1s6gR7q7w08tDG -->
+    <div id="main">
+        <div id="back-to-top">
+            <a class="layout_sticky-icon">
+                <span class="icon">
+                    <i class="fa-solid fa-arrow-up"></i>
+                </span>
+                <span class="text">Top</span>
+            </a>
+            <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+            <script>
+                $(document).ready(function(){
+                    $(window).scroll(function(){
+                        if ($(this).scrollTop()) {
+                            $('#back-to-top').fadeIn(1000);
+                        } else {
+                            $('#back-to-top').fadeOut(1000);
+                        }
+                    });
+                    $('#back-to-top').click(function(){
+                        $('html, body').animate({
+                            scrollTop: 0
+                        }, 500);
+                    })
+                });
+            </script>
+        </div>
+        <!-- Header -->
+        <div class="header">
+            <!-- header_top -->
+            <div class="header_top">
+                <div class="container">
+                    <div class="header_top-flex">
+                        <div class="time">
+                            Thứ hai, 27/11/2023
+                        </div>
+                        <div class="header_top-right">
+                            <div class="header_search">
+                                <div class="header_search-input">
+                                    <input class="header_search-input--text" placeholder="Nhập từ khóa">
+                                </div>
+                                <div class="form-search">
+                                   
+                                </div>
+                                <div class="header_search-icon">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </div>
+                            </div>
+                            <div class="header_top-hotline">
+                                <a href="" class="header_top-hotline--text">
+                                    Đường dây nóng: 19009095
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- header_middle -->
+            <div class="header_middle">
+                <div class="container">
+                    <div class="header_middle-flex">
+                        <h1>
+                            <a href="" class="header_logo" title="Trang chủ">
+                                <img src="./img/logo.webp" alt="">
+                            </a>
+                        </h1>
+                        <p class="header-slg">
+                            <span class="row-mb">
+                                CỔNG THÔNG TIN BỘ Y TẾ
+                            </span>
+                            VỀ ĐẠI DỊCH COVID
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- header_bot -->
+            <div class="header_bot">
+                <div class="container">
+                    <div class="header_nav">
+                        <ul>
+                            <li>
+                                <a href="" class="nav-link active">
+                                    <i class="fa-solid fa-house"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="nav-link">
+                                    Bản tin Covid-19
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="nav-link">
+                                    Chỉ đạo chống dịch
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="nav-link">
+                                    Dự phòng - Điều trị
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="nav-link">
+                                    Vaccine - Tiêm chủng
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="nav-link">
+                                    Hoạt động địa phương
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="nav-link">
+                                    Hướng dẫn
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="nav-link">
+                                    Video
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="nav-link">
+                                    Tin tức
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="nav-link">
+                                    Tình hình thế giới
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            $(document).ready(function() {
+                $(window).scroll(function() {
+                    if($(this).scrollTop()) {
+                        $('div.header').addClass('fixed-pc');
+                    } else {
+                        $('div.header').removeClass('fixed-pc');
+                    }
+                })
+            })
+        </script>
+        <!-- container -->
+        <div class="main home-page">
+            <div class="home_statistical">
+                <div class="container">
+                    <iframe src="./iframe.html" frameborder="0" width="100%"  style="height: 128px;">
+                    </iframe>
+                </div>
+            </div>
+
+            <div class="home_focus">
+                <div class="container">
+                    <div class="home_focus-flex">
+                        <div class="home_focus-item">
+                            <a href="" class="img-ressize">
+                                <img src="./img/1.jpg" alt="">
+                            </a>
+                            <h3 class="box-focus-content">
+                                <a href="">Thống nhất chuyển COVID-19 từ bệnh truyền nhiễm nhóm A xuống nhóm B</a>
+                            </h3>
+                            <p class="box-focus-sapo"> Ban Chỉ đạo Quốc gia phòng, chống dịch COVID-19 thống nhất chuyển bệnh COVID-19 từ bệnh truyền nhiễm nhóm A sang bệnh truyền nhiễm nhóm B, đồng thời ban hành hướng dẫn việc áp dụng các biện pháp phòng, chống dịch COVID-19 phù hợp với dịch bệnh nhóm B.</p>
+                        </div>
+
+                        <div class="home_focus-list">
+                            <h2 class="title-section">
+                                <a href="">
+                                    Diễn biến dịch
+                                </a>
+                            </h2>
+                            <div class="home_focus-position">
+                                <div class="swiper-container home_focus-swiper home_focus-right home_focus-position-scroll" tabindex="1" style="overflow: hidden; outline: none; overflow-y: scroll;">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide" data-index="0">
+                                            <div class="item active">
+                                                <p class="time">
+                                                    17:40 29/06/2022
+                                                </p>
+                                                <div class="box-focus-content">
+                                                    <span class="box-focus-link-title">
+                                                        THÔNG BÁO VỀ 777 CA MẮC MỚI
+                                                    </span>
+                                                </div>
+                                                <div class="box-focus-sapo">
+                                                    <p>
+                                                        Tính từ 16h ngày 28/6 đến 16h ngày 29/6, trên Hệ thống Quốc gia quản lý ca bệnh COVID-19 ghi nhận 777 ca nhiễm mới, trong đó 0 ca nhập cảnh và 777 ca ghi nhận trong nước tại 43 tỉnh thành phố.
+                                                    </p>
+                                                    <p>
+                                                        Các tỉnh, thành phố ghi nhận ca bệnh như sau:  Hà Nội (191), Bắc Ninh (74), Nghệ An (42), Hồ Chí Minh (35), Quảng Ninh (34), Lào Cai (31), Yên Bái (28), Quảng Bình (24), Ninh Bình (24), Hà Nam (23), Hải Dương (21), Phú Thọ (20), Vĩnh Phúc (17), Thái Nguyên (14), Cao Bằng (14), Tuyên Quang (14), Sơn La (14), Thái Bình (13), Bắc Giang (12), Bắc Kạn (12), Quảng Trị (11), Thanh Hóa (11), Nam Định (10), Đà Nẵng (10), Hưng Yên (10), Hòa Bình (9), Quảng Ngãi (8), Lạng Sơn (8), Hà Tĩnh (7), Hải Phòng (7), Điện Biên (4), Khánh Hòa (4), Lâm Đồng (4), Bình Dương (3), Đồng Tháp (3), Lai Châu (2), Gia Lai (2), Tây Ninh (2), Bình Thuận (1), Bình Phước (1), Đồng Nai (1), Bà Rịa - Vũng Tàu (1), Bến Tre (1).
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide" data-index="1">
+                                            <div class="item">
+                                                <p class="time">
+                                                    17:43 28/06/2022
+                                                </p>
+                                                <div class="box-focus-content">
+                                                    <span class="box-focus-link-title">
+                                                        THÔNG BÁO VỀ 769 CA MẮC MỚI
+                                                    </span>
+                                                </div>
+                                                <div class="box-focus-sapo">
+                                                    <p>Tính từ 16h ngày 27/6 đến 16h ngày 28/6, trên Hệ thống Quốc gia quản lý ca bệnh COVID-19 ghi nhận 769 ca nhiễm mới, trong đó 0 ca nhập cảnh và 769 ca ghi nhận trong nước (tăng 132 ca so với ngày trước đó) tại 37 tỉnh, thành phố (có 665 ca trong cộng đồng).</p>
+                                                    <p>Các tỉnh, thành phố ghi nhận ca bệnh như sau: Hà Nội (158), Phú Thọ (62), Nghệ An (54), Bắc Ninh (40), Sơn La (40), Đà Nẵng (38), TP. Hồ Chí Minh (32), Yên Bái (32), Lào Cai (27), Quảng Ninh (26), Hòa Bình (26), Hà Nam (21), Vĩnh Phúc (21), Bắc Kạn (17), Hưng Yên (16), Tuyên Quang (15), Cao Bằng (14), Thái Bình (13), Hải Dương (13), Quảng Bình (12), Ninh Bình (11), Thái Nguyên (11), Nam Định (11), Hải Phòng (9), Quảng Trị (8 ), Thanh Hóa (7), Khánh Hòa (6), Lạng Sơn (5), Lâm Đồng (5), Bà Rịa - Vũng Tàu (4), Điện Biên (4), Bắc Giang (3), Lai Châu (2), Bình Thuận (2), Bến Tre (2), Đồng Tháp (1), Cà Mau (1).</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide" data-index="2">
+                                            <div class="item">
+                                                <p class="time">
+                                                    17:41 27/06/2022
+                                                </p>
+                                                <div class="box-focus-content">
+                                                    <span class="box-focus-link-title">
+                                                        THÔNG BÁO VỀ 637 CA MẮC MỚI
+                                                    </span>
+                                                </div>
+                                                <div class="box-focus-sapo">
+                                                    <p>Tính từ 16h ngày 26/6 đến 16h ngày 27/6, trên Hệ thống Quốc gia quản lý ca bệnh COVID-19 ghi nhận 637 ca nhiễm mới, trong đó 0 ca nhập cảnh và 637 ca ghi nhận trong nước (tăng 80 ca so với ngày trước đó) tại 39 tỉnh, thành phố (có 598 ca trong cộng đồng).</p>
+                                                    <p>Các tỉnh, thành phố ghi nhận ca bệnh như sau: Hà Nội (188), Hải Phòng (64), Đà Nẵng (62), Yên Bái (31), Quảng Ninh (21), Hải Dương (21), Lào Cai (19), Phú Thọ (19), TP. Hồ Chí Minh (14), Vĩnh Phúc (13), Hưng Yên (12), Thái Bình (12), Thái Nguyên (12), Lạng Sơn (11), Hòa Bình (11), Bắc Kạn (10), Nghệ An (10), Sơn La (9), Quảng Bình (9), Điện Biên (8), Tuyên Quang (8 ), Cao Bằng (8 ), Quảng Ngãi (7), Hà Nam (7), Quảng Trị (6), Thanh Hóa (6), Bắc Giang (6), Ninh Bình (5), Hà Giang (5), Nam Định (5), Bình Dương (5), Lâm Đồng (4), Hà Tĩnh (2), Gia Lai (2), Khánh Hòa (1), Tây Ninh (1), Bình Định (1), Quảng Nam (1), Cần Thơ (1).</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-scrollbar"></div>
+                                </div>
+                            </div>
+                            <a href="" class="home_fp-viewmore">Xem thêm</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="home_juncture">
+                <div class="container">
+                    <iframe src="./iframe2.html" scrolling="no" frameboder="0" width="100%" height="100" frameborder="0" style="height: 491px;"></iframe>
+                </div>
+            </div>
+            <div class="home_section-new" style="margin: 0 150px 30px;">
+                <div class="container">
+                    <div class="home_sn-flex" style="display: flex;">
+                        <div class="box-category">
+                            <h2 class="title-section">
+                                <a href="" class="title-link">
+                                    Chỉ đạo chống dịch
+                                </a>
+                            </h2>
+                            <div class="content-list-new">
+                                <div class="box-stream" data-layout="2">
+                                    <div class="box-stream-item">
+                                        <a href="" class="box-stream-link-with-avatar img-resize">
+                                            <img src="./img/1.jpg" alt="" class="box-stream-avatar">
+                                        </a>
+                                        <div class="box-stream-content">
+                                            <h3 class="title-top">
+                                                <a href="" class="box-stream-link-title">Thống nhất chuyển COVID-19 từ bệnh truyền nhiễm nhóm A xuống nhóm B</a>
+                                            </h3>
+                                            <p class="box-stream-sapo"> Ban Chỉ đạo Quốc gia phòng, chống dịch COVID-19 thống nhất chuyển...</p>
+                                        </div>
+                                    </div>
+                                    <div class="box-stream-item">
+                                        <a href="" class="box-stream-link-with-avatar img-resize">
+                                            <img src="./img/2.jpg" alt="" class="box-stream-avatar">
+                                        </a>
+                                        <div class="box-stream-content">
+                                            <h3 class="title-top">
+                                                <a href="" class="box-stream-link-title">Bộ Y tế: COVID-19 và các bệnh có nguy cơ lây nhiễm khác tiếp tục diễn...</a>
+                                            </h3>
+                                            <p class="box-stream-sapo">Theo Bộ Y tế, hiện nay tình hình bệnh dịch COVID-19 và các bệnh có nguy cơ...</p>
+                                        </div>
+                                    </div>
+                                    <div class="box-stream-item">
+                                        <a href="" class="box-stream-link-with-avatar img-resize">
+                                            <img src="./img/3.jpg" alt="" class="box-stream-avatar">
+                                        </a>
+                                        <div class="box-stream-content">
+                                            <h3 class="title-top">
+                                                <a href="" class="box-stream-link-title">Bộ Y tế: Tăng cường phòng, chống COVID-19, dịch bệnh truyền nhiễm...</a>
+                                            </h3>
+                                            <p class="box-stream-sapo">Theo Bộ Y tế trong tháng 4/2023, một số bệnh đã ghi nhận số mắc tăng mạnh so...</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box-category">
+                            <h2 class="title-section">
+                                <a href="" class="title-link">
+                                    Bản tin Covid-19
+                                </a>
+                            </h2>
+                            <div class="content-list-new">
+                                <div class="box-stream" data-layout="2">
+                                    <div class="box-stream-item">
+                                        <a href="" class="box-stream-link-with-avatar img-resize">
+                                            <img src="./img/4.jpg" alt="" class="box-stream-avatar">
+                                        </a>
+                                        <div class="box-stream-content">
+                                            <h3 class="title-top">
+                                                <a href="" class="box-stream-link-title">Ngày 3/6: Ca COVID-19 mới giảm còn 280</a>
+                                            </h3>
+                                            <p class="box-stream-sapo">Bản tin phòng chống dịch COVID-19 của Bộ Y tế ngày 3/6 cho biết, có 280 ca...</p>
+                                        </div>
+                                    </div>
+                                    <div class="box-stream-item">
+                                        <a href="" class="box-stream-link-with-avatar img-resize">
+                                            <img src="./img/5.png" alt="" class="box-stream-avatar">
+                                        </a>
+                                        <div class="box-stream-content">
+                                            <h3 class="title-top">
+                                                <a href="" class="box-stream-link-title">Ngày 2/6: Có 744 ca COVID-19 mới trong 24h qua</a>
+                                            </h3>
+                                            <p class="box-stream-sapo">Bản tin phòng chống dịch COVID-19 ngày 2/6 của Bộ Y tế cho biết có 744 ca mắc...</p>
+                                        </div>
+                                    </div>
+                                    <div class="box-stream-item">
+                                        <a href="" class="box-stream-link-with-avatar img-resize">
+                                            <img src="./img/6.jpg" alt="" class="box-stream-avatar">
+                                        </a>
+                                        <div class="box-stream-content">
+                                            <h3 class="title-top">
+                                                <a href="" class="box-stream-link-title">Ngày 30/5: Có 652 ca COVID-19 mới, ca thở oxy tăng lên</a>
+                                            </h3>
+                                            <p class="box-stream-sapo"> Bản tin phòng chống dịch COVID-19 của Bộ Y tế ngày 30/5 cho biết có 652 ca...</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="home_category" style="margin: 0 150px 30px;">
+                <div class="container">
+                    <h2 class="title-section">
+                        <a href="">Dự phòng-điều trị</a>
+                    </h2>
+                    <div class="box" data-layout="2">
+                        <div class="box-top">
+                            <div class="box-big">
+                                <div class="box-item">
+                                    <a href="" class="box-link-with-avarta img-resize">
+                                        <img src="./img/box.png" alt="" class="box-avarta">
+                                    </a>
+                                    <h3>
+                                        <a href="" class="box-link-title">
+                                            Những đối tượng tiêm chủng vaccine bắt buộc
+                                        </a>
+                                    </h3>
+                                    <p class="box-sapo">Cục Y tế dự phòng - Bộ Y tế vừa có văn bản hướng dẫn xác định nhu cầu, lập kế hoạch cung ứng các vaccine trong tiêm chủng mở rộng.</p>
+                                </div>
+                            </div>
+                            <div class="box-sub">
+                                <div class="box-item-sm">
+                                    <a href="" class="box-link-with-avatar img-resiza">
+                                        <img src="./img/7.jpg" alt="">
+                                    </a>
+                                    <h3 class="box-content">
+                                        <a href="" class="box-link-title">
+                                            Hà Nội: Yêu cầu bảo trì hệ thống oxy sẵn sàng điều trị ca bệnh COVID-19 nếu có
+                                        </a>
+                                    </h3>
+                                </div>
+                                <div class="box-item-sm">
+                                    <a href="" class="box-link-with-avatar img-resiza">
+                                        <img src="./img/8.jpg" alt="">
+                                    </a>
+                                    <h3 class="box-content">
+                                        <a href="" class="box-link-title">
+                                            Ca COVID-19 tiếp tục tăng, cần tuân thủ 2K và đẩy nhanh tiêm vaccine trong phòng chống dịch
+                                        </a>
+                                    </h3>
+                                </div>
+                                <div class="box-item-sm">
+                                    <a href="" class="box-link-with-avatar img-resiza">
+                                        <img src="./img/9.jpg" alt="">
+                                    </a>
+                                    <h3 class="box-content">
+                                        <a href="" class="box-link-title">
+                                            Thứ trưởng Nguyễn Thị Liên Hương: Không lơ là phòng chống dịch COVID-19, khám chữa bệnh dịp Tết
+                                        </a>
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="home_category" style="margin: 0 150px 30px;">
+                <div class="container">
+                    <h2 class="title-section">
+                        <a href="">Vaccine-Tiêm chủng</a>
+                    </h2>
+                    <div class="box" data-layout="2">
+                        <div class="box-top">
+                            <div class="box-big">
+                                <div class="box-item">
+                                    <a href="" class="box-link-with-avarta img-resize">
+                                        <img src="./img/10.jpg" alt="" class="box-avarta">
+                                    </a>
+                                    <h3>
+                                        <a href="" class="box-link-title">       
+                                            Bộ Y tế đã đề nghị bố trí kinh phí thực hiện mua vaccine cho Chương trình tiêm chủng mở rộng năm 2023
+                                        </a>
+                                    </h3>
+                                    <p class="box-sapo">Thứ trưởng Bộ Y tế Nguyễn Thị Liên Hương thông tin, năm 2023, để bảo đảm nguồn vaccine cho Chương trình tiêm chủng mở rộng, Bộ đã xây dựng dự...</div>
+                            </div>
+                            <div class="box-sub">
+                                <div class="box-item-sm">
+                                    <a href="" class="box-link-with-avatar img-resiza">
+                                        <img src="./img/11.jpg" alt="">
+                                    </a>
+                                    <h3 class="box-content">
+                                        <a href="" class="box-link-title">
+                                            Tin mới nhất về tiêm vaccine COVID-19 trong 3 ngày đầu nghỉ lễ
+                                        </a>
+                                    </h3>
+                                </div>
+                                <div class="box-item-sm">
+                                    <a href="" class="box-link-with-avatar img-resiza">
+                                        <img src="./img/12.jpeg" alt="">
+                                    </a>
+                                    <h3 class="box-content">
+                                        <a href="" class="box-link-title">
+                                            TP.HCM có 59 điểm tiêm vaccine COVID-19 xuyên lễ 30/4 và 1/5
+                                        </a>
+                                    </h3>
+                                </div>
+                                <div class="box-item-sm">
+                                    <a href="" class="box-link-with-avatar img-resiza">
+                                        <img src="./img/13.jpg" alt="">
+                                    </a>
+                                    <h3 class="box-content">
+                                        <a href="" class="box-link-title">
+                                            Thông tin mới nhất về tiêm vaccine COVID-19; Nâng cấp độ cảnh báo đối với biến thể XBB.1.5
+                                        </a>
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Phần khác biệt video-->
+            <div class="home_category home-margin">
+                <div class="container">
+                    <h2 class="title-section">
+                        <a href="">Video</a>
+                    </h2>
+                    <div class="box" data-layout="3">
+                        <div class="box-top">
+                            <div class="box-big">
+                                <div class="box-item need-init-player">
+                                        <div class="box-link-with-avatar">
+                                            <div style="width: 100%; background-color: black;">
+                                                <video src="./video/Bộ Y tế - Cổng thông tin của Bộ Y tế về đại dịch COVID-19.mp4" controls loop muted></video>
+                                            </div>
+                                        </div>
+                                    <h3>
+                                        <a href="" class="box-link-title">
+                                            Phòng, chống dịch COVID-19 tại chợ, siêu thị, trung tâm thương mại
+                                        </a>
+                                    </h3>
+                                    <p class="box-sapo">Những phiên chợ hay siêu thị là những địa điểm tập trung đông người mỗi ngày.Vậy thì làm sao khi mà nhu cầu mua sắm vẫn rất cao mà vẫn phải đảm...</p>
+                                </div>
+                            </div>
+                            <div class="box-sub">
+                                <div class="box-item-sm">
+                                    <a href="" class="box-link-with-avatar iframe-resize">
+                                        <img src="./img/40.jpg" alt="" class="iframe">
+                                        <span class="icon-video">
+                                            <i class="fa-solid fa-play"></i>
+                                        </span>
+                                        <span class="time">02:48</span>
+                                    </a>
+                                    <h3 class="box-content">
+                                        <a href="" class="box-link-title">
+                                            Phòng, chống dịch COVID-19 ở sân bay
+                                        </a>
+                                    </h3>
+                                </div>
+                                <div class="box-item-sm">
+                                    <a href="" class="box-link-with-avatar iframe-resize">
+                                        <img src="./img/41.jpg" alt="" class="iframe">
+                                        <span class="icon-video">
+                                            <i class="fa-solid fa-play"></i>
+                                        </span>
+                                        <span class="time">02:38</span>
+                                    </a>
+                                    <h3 class="box-content">
+                                        <a href="" class="box-link-title">
+                                            An toàn phòng chống dịch tại khu nhà trọ, ký túc xá của khu công nghiệp
+                                        </a>
+                                    </h3>
+                                </div>
+                                <div class="box-item-sm">
+                                    <a href="" class="box-link-with-avatar iframe-resize">
+                                        <img src="./img/42.jpg" alt="" class="iframe">
+                                        <span class="icon-video">
+                                            <i class="fa-solid fa-play"></i>
+                                        </span>
+                                        <span class="time">02:57</span>
+                                    </a>
+                                    <h3 class="box-content">
+                                        <a href="" class="box-link-title">
+                                            Hướng dẫn phòng, chống COVID-19 an toàn tại cơ sở sản xuất kinh doanh, khu công nghiệp
+                                        </a>
+                                    </h3>
+                                </div>
+                                <div class="box-item-sm">
+                                    <a href="" class="box-link-with-avatar iframe-resize">
+                                        <img src="./img/43.jpg" alt="" class="iframe">
+                                        <span class="icon-video">
+                                            <i class="fa-solid fa-play"></i>
+                                        </span>
+                                        <span class="time">02:48</span>
+                                    </a>
+                                    <h3 class="box-content">
+                                        <a href="" class="box-link-title">
+                                            An toàn phòng chống dịch khi sử dụng phương tiện giao thông
+                                        </a>
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="home_section-new home-margin">
+                <div class="container">
+                    <div class="home_sn-flex" style="display: flex;">
+                        <div class="box-category">
+                            <h2 class="title-section">
+                                <a href="" class="title-link">
+                                    Hướng dẫn
+                                </a>
+                            </h2>
+                            <div class="content-list-new">
+                                <div class="box-stream" data-layout="2">
+                                    <div class="box-stream-item">
+                                        <a href="" class="box-stream-link-with-avatar img-resize">
+                                            <img src="./img/20.png" alt="" class="box-stream-avatar">
+                                        </a>
+                                        <div class="box-stream-content">
+                                            <h3 class="title-top">
+                                                <a href="" class="box-stream-link-title">Du lịch vào mùa, ca mắc COVID-19 tăng, các tỉnh miền Trung khuyến cáo...</a>
+                                            </h3>
+                                            <p class="box-stream-sapo">Tại Thừa Thiên Huế và Quảng Bình thời gian gần đây ghi nhận một số ca...</p>
+                                        </div>
+                                    </div>
+                                    <div class="box-stream-item">
+                                        <a href="" class="box-stream-link-with-avatar img-resize">
+                                            <img src="./img/21.jpg" alt="" class="box-stream-avatar">
+                                        </a>
+                                        <div class="box-stream-content">
+                                            <h3 class="title-top">
+                                                <a href="" class="box-stream-link-title">Tết an toàn, bảo vệ bản thân trước COVID-19</a>
+                                            </h3>
+                                            <p class="box-stream-sapo">Tổ chức Y tế thế giới (WHO) khuyến cáo, Tết là dịp để sum vầy, vì vậy đừng....</p>
+                                        </div>
+                                    </div>
+                                    <div class="box-stream-item">
+                                        <a href="" class="box-stream-link-with-avatar img-resize">
+                                            <img src="./img/22.jpeg" alt="" class="box-stream-avatar">
+                                        </a>
+                                        <div class="box-stream-content">
+                                            <h3 class="title-top">
+                                                <a href="" class="box-stream-link-title">10 khuyến cáo phòng chống dịch trong và sau bão, lũ của Bộ Y tế</a>
+                                            </h3>
+                                            <p class="box-stream-sapo">Theo Bộ Y tế, trong và sau mưa bão, lũ lụt sẽ có rất nhiều vi sinh vật, bụi, rác,...</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box-category">
+                            <h2 class="title-section">
+                                <a href="" class="title-link">
+                                    Hoạt động địa phương
+                                </a>
+                            </h2>
+                            <div class="content-list-new">
+                                <div class="box-stream" data-layout="2">
+                                    <div class="box-stream-item">
+                                        <a href="" class="box-stream-link-with-avatar img-resize">
+                                            <img src="./img/23.jpg" alt="" class="box-stream-avatar">
+                                        </a>
+                                        <div class="box-stream-content">
+                                            <h3 class="title-top">
+                                                <a href="" class="box-stream-link-title">Hà Nội: 100% mẫu bệnh phẩm nhiễm virus SARS-CoV-2 đều thuộc...</a>
+                                            </h3>
+                                            <p class="box-stream-sapo">Trung tâm Kiểm soát bệnh tật Hà Nội (CDC) cho biết, từ ngày 29/4-5/5, kết...</p>
+                                        </div>
+                                    </div>
+                                    <div class="box-stream-item">
+                                        <a href="" class="box-stream-link-with-avatar img-resize">
+                                            <img src="./img/24.jpg" alt="" class="box-stream-avatar">
+                                        </a>
+                                        <div class="box-stream-content">
+                                            <h3 class="title-top">
+                                                <a href="" class="box-stream-link-title">Ca mắc COVID-19 tiếp tục tăng, người dân Hà Nội chủ động đi tiêm vaccine</a>
+                                            </h3>
+                                            <p class="box-stream-sapo">Trước diễn biến dịch COVID-19 gia tăng thời gian qua, nhiều người dân Hà Nội...</p>
+                                        </div>
+                                    </div>
+                                    <div class="box-stream-item">
+                                        <a href="" class="box-stream-link-with-avatar img-resize">
+                                            <img src="./img/25.jpeg" alt="" class="box-stream-avatar">
+                                        </a>
+                                        <div class="box-stream-content">
+                                            <h3 class="title-top">
+                                                <a href="" class="box-stream-link-title">TP.HCM phát động tháng cao điểm tiêm vaccine phòng COVID-19</a>
+                                            </h3>
+                                            <p class="box-stream-sapo">Sở Y tế TP.HCM hướng dẫn người dân tiêm vaccine phòng COVID-19 nhắc lại...</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="home_category home-margin">
+                <div class="container">
+                    <h2 class="title-section">
+                        <a href="">Tình hình thế giới</a>
+                    </h2>
+                    <div class="box" data-layout="2">
+                        <div class="box-top">
+                            <div class="box-big">
+                                <div class="box-item">
+                                    <a href="" class="box-link-with-avarta img-resize">
+                                        <img src="./img/30.jpg" alt="" class="box-avarta">
+                                    </a>
+                                    <h3>
+                                        <a href="" class="box-link-title">
+                                            WHO thêm Omicron XBB.1.16 vào danh sách biến thể phụ đáng quan tâm
+                                        </a>
+                                    </h3>
+                                    <p class="box-sapo">Tổ chức Y tế Thế giới (WHO) đã thêm biến thể phụ mới đang lây lan nhanh của Omicron XBB.1.16 vào danh sách biến thể mới đáng quan tâm. WHO cho biết...</p>
+                                </div>
+                            </div>
+                            <div class="box-sub">
+                                <div class="box-item-sm">
+                                    <a href="" class="box-link-with-avatar img-resiza">
+                                        <img src="./img/31.jpg" alt="">
+                                    </a>
+                                    <h3 class="box-content">
+                                        <a href="" class="box-link-title">
+                                            Mắc COVID-19 làm tăng nguy cơ phát triển bệnh Alzheimer, Parkinson hoặc đột quỵ
+                                        </a>
+                                    </h3>
+                                </div>
+                                <div class="box-item-sm">
+                                    <a href="" class="box-link-with-avatar img-resiza">
+                                        <img src="./img/32.jpg" alt="">
+                                    </a>
+                                    <h3 class="box-content">
+                                        <a href="" class="box-link-title">
+                                            Số ca mắc COVID-19 do biến thể BA.4 và BA.5 tiếp tục tăng tại Mỹ
+                                        </a>
+                                    </h3>
+                                </div>
+                                <div class="box-item-sm">
+                                    <a href="" class="box-link-with-avatar img-resiza">
+                                        <img src="./img/33.jpg" alt="">
+                                    </a>
+                                    <h3 class="box-content">
+                                        <a href="" class="box-link-title"> 
+                                            COVID-19 có thể ảnh hưởng đến sự phát triển não bộ của trẻ sơ sinh trong bụng mẹ
+                                        </a>
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="home_list-news home-margin">
+                <div class="container">
+                    <h2 class="title-section">
+                        <a href="">Tin tức</a>
+                    </h2>
+                    <div class="home_ln-flex">
+                        <div class="box-stream" data-layout="1">
+                            <div class="flex">
+                                <div class="box-stream-item">
+                                    <a href="" class="box-stream-link-with-avatar img-resize">
+                                        <img src="./img/50.jpg" alt="" class="box-stream-avatar">
+                                    </a>
+                                    <div class="box-stream-content">
+                                        <h3 class="title-top">
+                                            <a href="" class="box-stream-link-title">
+                                                "COVID-19 không còn là tình trạng y tế khẩn cấp nhưng không có nghĩa chúng ta sẽ bỏ rơi..."
+                                            </a>
+                                        </h3>
+                                    </div>
+                                </div>
+                                <div class="box-stream-item">
+                                    <a href="" class="box-stream-link-with-avatar img-resize">
+                                        <img src="./img/51.jpeg" alt="">
+                                    </a>
+                                    <div class="box-stream-content">
+                                        <h3 class="title-top">
+                                            <a href="" class="box-stream-link-title">
+                                                Sáng 14/1: Theo dõi chặt sự xuất hiện các biến thể mới của COVID-19
+                                            </a>
+                                        </h3>
+                                    </div>
+                                </div>
+                                <div class="box-stream-item">
+                                    <a href="" class="box-stream-link-with-avatar img-resize">
+                                        <img src="./img/52.jpg" alt="">
+                                    </a>
+                                    <div class="box-stream-content">
+                                        <h3 class="title-top">
+                                            <a href="" class="box-stream-link-title">
+                                                Bộ trưởng Bộ Y tế Đào Hồng Lan: Nghị Quyết 30 góp phần kiểm soát thành công dịch bệnh COVID-19
+                                            </a>
+                                        </h3>
+                                    </div>
+                                </div>
+                                <div class="box-stream-item">
+                                    <a href="" class="box-stream-link-with-avatar img-resize">
+                                        <img src="./img/53.jpeg" alt="">
+                                    </a>
+                                    <div class="box-stream-content">
+                                        <h3 class="title-top">
+                                            <a href="" class="box-stream-link-title">
+                                                Thứ trưởng Bộ Y tế: Việt Nam là một trong những quốc gia có tỷ lệ bao phủ vaccine COVID-19 cao nhất thế giới
+                                            </a>
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex">
+                                <div class="box-stream-item">
+                                    <a href="" class="box-stream-link-with-avatar img-resize">
+                                        <img src="./img/54.jpg" alt="">
+                                    </a>
+                                    <div class="box-stream-content">
+                                        <h3 class="title-top">
+                                            <a href="" class="box-stream-link-title">
+                                                Các chính sách tháo gỡ khó khăn cho người lao động ngành y tế sau ảnh hưởng của đại dịch COVID-19
+                                            </a>
+                                        </h3>
+                                    </div>
+                                </div>
+                                <div class="box-stream-item">
+                                    <a href="" class="box-stream-link-with-avatar img-resize">
+                                        <img src="./img/55.jpg" alt="">
+                                    </a>
+                                    <div class="box-stream-content">
+                                        <h3 class="title-top">
+                                            <a href="" class="box-stream-link-title">
+                                                Thứ trưởng Trần Văn Thuấn: Chuyển đổi số y tế đóng góp lớn trong phòng chống dịch COVID-19 và chăm sóc sức khoẻ nhân dân
+                                            </a>
+                                        </h3>
+                                    </div>
+                                </div>
+                                <div class="box-stream-item">
+                                    <a href="" class="box-stream-link-with-avatar img-resize">
+                                        <img src="./img/56.jpg" alt="">
+                                    </a>
+                                    <div class="box-stream-content">
+                                        <h3 class="title-top">
+                                            <a href="" class="box-stream-link-title">
+                                                "Bài học từ đại dịch COVID-19, các giải pháp khắc phục và hướng đến tương lai"
+                                            </a>
+                                        </h3>
+                                    </div>
+                                </div>
+                                <div class="box-stream-item">
+                                    <a href="" class="box-stream-link-with-avatar img-resize">
+                                        <img src="./img/57.jpg" alt="">
+                                    </a>
+                                    <div class="box-stream-content">
+                                        <h3 class="title-top">
+                                            <a href="" class="box-stream-link-title">
+                                                Tổng kết Chiến dịch truyền thông “Vì một Việt Nam vững vàng và khỏe mạnh”
+                                            </a>
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="home_partner home-margin">
+                <div class="container">
+                    <h2 class="title-section">
+                        <a href="">Liên kết</a>
+                    </h2>
+                    <div class="home_partner-content">
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper flex">
+                                <img src="./img/60.webp" alt="" style="width: 200px; margin-right: 20px;">
+                                <img src="./img/61.webp" alt="" style="width: 200px; margin-right: 20px;">
+                                <img src="./img/62.webp" alt="" style="width: 200px; margin-right: 20px;">
+                                <img src="./img/63.webp" alt="" style="width: 200px; margin-right: 20px;">
+                                <img src="./img/64.webp" alt="" style="width: 200px; margin-right: 20px;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="fix-footer" style="background-color: #2e3192;">
+            <div class="footer" style="margin: 0 150px;">
+                <div class="container">
+                    <div class="footer_flex">
+                        <div class="footer_left">
+                            <div class="footer-lflex">
+                                <a href="" class="footer_logo">
+                                    <img src="./img/logo.webp" alt="">
+                                </a>
+                                <div class="footer_name">
+                                    <p class="text">
+                                        QUẢN LÝ NỘI DUNG: BÁO SỨC KHỎE VÀ ĐỜI SỐNG - CƠ QUAN NGÔN LUẬN CỦA BỘ Y TẾ</p>
+                                    <p class="text">Địa chỉ: Số 138A Giảng Võ - Quận Ba Đình - TP. Hà Nội</p>
+                                    <p class="text">Đường dây nóng: 19009095</p>
+                                    <p class="text">Email: covid19@suckhoedoisong.vn</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer-right">
+                            <div class="footer-content">
+                                <a rel="nofollow" href="https://vccorp.vn/" title="Công ty Cổ phần VCCorp" target="_blank" class="vccorp-footer-logo"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
